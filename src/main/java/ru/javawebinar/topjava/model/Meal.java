@@ -11,6 +11,8 @@ public class Meal extends AbstractBaseEntity {
 
     private int calories;
 
+    private User user;
+
     public Meal(){}
 
     public Meal(Meal meal) {
@@ -58,6 +60,14 @@ public class Meal extends AbstractBaseEntity {
 
     public void setCalories(int calories) {
         this.calories = calories;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override
